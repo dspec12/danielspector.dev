@@ -16,7 +16,6 @@ footer .container.social img{
 
 footer .container.social a{
   color: #343a40;
-  display: inline-block;
 }
 
 footer .container.social a:active{
@@ -24,6 +23,10 @@ footer .container.social a:active{
 }
 
 /* Body */
+body{
+  font-family: 'Source Code Pro', monospace;
+}
+
 .container.body h1{
   text-align: center;
 }
