@@ -1,0 +1,29 @@
+/* Header */
+header{
+  padding-bottom: 65px;
+}
+
+/* Footer */
+footer{
+  text-align: center;
+  padding-top: 25px;
+}
+
+footer .container.social img{
+  height: 125px;
+  border-radius: 50%;
+}
+
+footer .container.social a{
+  color: #343a40;
+  display: inline-block;
+}
+
+footer .container.social a:active{
+  color: blue;
+}
+
+/* Body */
+.container.body h1{
+  text-align: center;
+}
