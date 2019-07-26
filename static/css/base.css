@@ -3,6 +3,11 @@ header {
   padding-bottom: 100px;
 }
 
+/* Content */
+.content {
+  min-height: calc(100vh - 314px)
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -32,13 +37,10 @@ body {
 }
 
 .container.social {
-  position: absolute;
-  bottom: 0;
-  margin: 0 auto;
-  border-top: 1px solid lightgray;
   display: block;
   padding: 2rem;
   max-width:100%;
+  background: lightgrey
 }
 
 .container.body.home h1 {

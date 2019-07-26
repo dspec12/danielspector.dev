@@ -32,8 +32,10 @@
         </nav>
       </div>
     </header>
-    {% block  content %}
-    {% endblock content %}
+    <div class="content">
+      {% block  content %}
+      {% endblock content %}
+    </div>
     <footer>
       <div class="container social">
         <img src="{% static "imgs/me.jpg" %}" alt="me">
