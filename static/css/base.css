@@ -1,32 +1,46 @@
 /* Header */
-header{
-  padding-bottom: 65px;
+header {
+  padding-bottom: 100px;
 }
 
 /* Footer */
-footer{
+footer {
   text-align: center;
   padding-top: 25px;
 }
 
-footer .container.social img{
+footer .container.social img {
   height: 125px;
   border-radius: 50%;
 }
 
-footer .container.social a{
+footer .container.social a {
   color: #343a40;
 }
 
-footer .container.social a:active{
+footer .container.social a:active {
   color: blue;
 }
 
 /* Body */
-body{
+body {
   font-family: 'Source Code Pro', monospace;
 }
 
-.container.body h1{
+.container.body h1 {
   text-align: center;
+}
+
+.container.social {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  border-top: 1px solid lightgray;
+  display: block;
+  padding: 2rem;
+  max-width:100%;
+}
+
+.container.body.home h1 {
+  padding-bottom: 25px;
 }
