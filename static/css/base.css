@@ -1,0 +1,48 @@
+/* Header */
+header {
+  padding-bottom: 100px;
+}
+
+/* Content */
+.content {
+  min-height: calc(100vh - 314px)
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding-top: 25px;
+}
+
+footer .container.social img {
+  height: 125px;
+  border-radius: 50%;
+}
+
+footer .container.social a {
+  color: #343a40;
+}
+
+footer .container.social a:active {
+  color: blue;
+}
+
+/* Body */
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.container.body h1 {
+  text-align: center;
+}
+
+.container.social {
+  display: block;
+  padding: 2rem;
+  max-width:100%;
+  background: lightgrey
+}
+
+.container.body.home h1 {
+  padding-bottom: 25px;
+}

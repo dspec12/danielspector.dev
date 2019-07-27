@@ -1,8 +1,14 @@
 {% extends 'base.html'  %}
+{% load static %}
 {% block content %}
-<div align="center">
+<div class="container body home">
+  <h1>Hello.</h1>
   <p>
-    Hello, world!
+    Here you will find a little bit of info about myself, and a tech blog I plan to update from time to time. I am not much of a writer, so it will mainly consist of how-to type content.
+  </p>
+  <br>
+  <p>
+    This site was created using the <a href="https://www.djangoproject.com/" target="_blank">Django</a> and <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> projects; deployed to <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a> using <a href="https://www.terraform.io/" target="_blank">Terraform</a>. Source code can be found in my <a href="https://github.com/dspec12" target="_blank">Github</a> repo.
   </p>
 </div>
 {% endblock content %}
