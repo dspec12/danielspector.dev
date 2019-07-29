@@ -1,8 +1,12 @@
 {% extends 'base.html'  %}
+{% load static %}
 {% block content %}
-<div align="center">
-  <p>
-    Blog
-  </p>
-</div>
+<div class="container body blog">
+  <h1>Blog.</h1>
+  {% for post in object_list %}
+  <div class="post_entry shadow p-3 mb-5 bg-white rounded">
+    <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+    <p>{{ post.body }}</p>
+  </div>
+{% endfor %}
 {% endblock content %}

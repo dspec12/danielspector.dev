@@ -1,11 +1,20 @@
+/* Global Settings & Misc*/
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.content {
+  min-height: calc(100vh - 314px)
+}
+
+.container.body h1 {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
 /* Header */
 header {
   padding-bottom: 100px;
-}
-
-/* Content */
-.content {
-  min-height: calc(100vh - 314px)
 }
 
 /* Footer */
@@ -27,15 +36,6 @@ footer .container.social a:active {
   color: blue;
 }
 
-/* Body */
-body {
-  font-family: 'Source Code Pro', monospace;
-}
-
-.container.body h1 {
-  text-align: center;
-}
-
 .container.social {
   display: block;
   padding: 2rem;
@@ -43,6 +43,15 @@ body {
   background: lightgrey
 }
 
-.container.body.home h1 {
-  padding-bottom: 25px;
+/* Home */
+
+/* About */
+
+/* Blog */
+.post_entry {
+  text-align: center;
+}
+
+.container.post_detail {
+  text-align: center;
 }
