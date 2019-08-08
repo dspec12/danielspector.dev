@@ -24,7 +24,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '+o#wzb@*b_+_r!(jcw3*dep23f-(h=
 
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'frontend.apps.FrontendConfig',
+    'django_summernote',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +121,19 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# Media Storage S3
+
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+
+DEFAULT_FILE_STORAGE = 'website.storage_backends.MediaStorage'
+
+# Summernote Theme
+SUMMERNOTE_THEME = 'bs4'

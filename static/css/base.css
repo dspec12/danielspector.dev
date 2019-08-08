@@ -4,7 +4,7 @@ body {
 }
 
 .content {
-  min-height: calc(100vh - 314px)
+  min-height: calc(100vh - 281px)
 }
 
 .container.body h1 {
@@ -20,7 +20,6 @@ header {
 /* Footer */
 footer {
   text-align: center;
-  padding-top: 25px;
 }
 
 footer .container.social img {
@@ -38,9 +37,14 @@ footer .container.social a:active {
 
 .container.social {
   display: block;
-  padding: 2rem;
+  padding: 1rem;
   max-width:100%;
   background: lightgrey
+}
+
+footer #Copyright {
+  background: lightgrey;
+  margin-bottom: 0px;
 }
 
 /* Home */
@@ -54,4 +58,8 @@ footer .container.social a:active {
 
 .container.post_detail {
   text-align: center;
+}
+
+.container.post_detail h1 {
+  padding-bottom: 25px;
 }
