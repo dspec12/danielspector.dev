@@ -110,5 +110,4 @@ venv.bak/
 .idea
 
 #ENV Vars
-.setenv.sh
 app.env

@@ -8,5 +8,5 @@ WORKDIR /app
 
 RUN pip install pipenv && pipenv install --deploy --system --ignore-pipfile
 
-#RUN adduser -D user
-#USER user
+RUN useradd -s /bin/bash admin
+USER admin
