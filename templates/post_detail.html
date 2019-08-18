@@ -2,9 +2,13 @@
 {% load static %}
 {% block content %}
 <div class="container post_detail">
-  <h1>{{ post.title }}.</h1>
-  <p>By: {{ post.author }} Published: <date></p>
+  <div class="post_header">
+    <h1 id="post_title">{{ post.title }}.</h1>
+    <p id="author_date">05/12/1986</p>
+  </div>
   <p>{{ post.body|safe }}</p>
-  <a href="{% url 'blog' %}">back</a>
+  <div class="post_header">
+    <a href="{% url 'blog' %}">back</a>
+  </div>
 </div>
 {% endblock content %}

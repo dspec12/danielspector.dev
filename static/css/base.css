@@ -4,7 +4,7 @@ body {
 }
 
 .content {
-  min-height: calc(100vh - 281px)
+  min-height: calc(100vh - 301px)
 }
 
 .container.body h1 {
@@ -20,6 +20,7 @@ header {
 /* Footer */
 footer {
   text-align: center;
+  padding-top: 20px;
 }
 
 footer .container.social img {
@@ -50,16 +51,24 @@ footer #Copyright {
 /* Home */
 
 /* About */
-
-/* Blog */
-.post_entry {
-  text-align: center;
+.container.about ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.container.post_detail {
+/* Blog */
+.post_header {
   text-align: center;
 }
 
 .container.post_detail h1 {
   padding-bottom: 25px;
+}
+
+#author_date {
+  font-size: small;
+}
+
+#post_title {
+  padding-bottom: 0px;
 }
