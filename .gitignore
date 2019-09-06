@@ -109,5 +109,5 @@ venv.bak/
 # intellij
 .idea
 
-#ENV Vars
-app.env
+# ENV File
+*.env
