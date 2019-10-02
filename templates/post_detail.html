@@ -4,7 +4,7 @@
 <div class="container post_detail">
   <div class="post_header">
     <h1 id="post_title">{{ post.title }}.</h1>
-    <p id="author_date">05/12/1986</p>
+    <p id="author_date">{{ post.author.first_name }} {{ post.author.last_name }} / {{ post.pub_date }}</p>
   </div>
   <p>{{ post.body|safe }}</p>
   <div class="post_header">
