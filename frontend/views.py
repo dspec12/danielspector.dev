@@ -3,15 +3,18 @@ from .models import Post
 
 
 class HomePageView(TemplateView):
-    template_name = 'home.html'
+    template_name = "home.html"
+
 
 class AboutPageView(TemplateView):
-    template_name = 'about.html'
+    template_name = "about.html"
+
 
 class BlogPageView(ListView):
-    model = Post
-    template_name = 'blog.html'
+    queryset = Post.objects.filter(published=True)
+    template_name = "blog.html"
+
 
 class BlogDetailView(DetailView):
-    model = Post
-    template_name = 'post_detail.html'
+    queryset = Post.objects.filter(published=True)
+    template_name = "post_detail.html"

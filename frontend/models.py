@@ -8,6 +8,7 @@ class Post(models.Model):
     pub_date = models.DateField(default=datetime.today())
     author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
     body = models.TextField()
+    published = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
