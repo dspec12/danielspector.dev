@@ -12,6 +12,7 @@ django = "~=2.2"
 django-summernote = "*"
 django-storages = "*"
 boto3 = "*"
+django-autoslug = "*"
 
 [requires]
 python_version = "3.7"
